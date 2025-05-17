@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carl Lazatin - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .navbar-scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 w-full bg-white z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#home" class="text-2xl font-bold text-gray-800">Carl Lazatin</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 px-3 py-2">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 px-3 py-2">About</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 px-3 py-2">Projects</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 px-3 py-2">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600">
+        <div class="text-center text-white">
+            <h1 class="text-5xl font-bold mb-4">Welcome to My Portfolio</h1>
+            <p class="text-xl mb-6">I'm a dancer</p>
+            <a href="#contact" class="inline-block bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/3">
+                    <img src="https://via.placeholder.com/300" alt="Profile" class="rounded-full w-64 h-64 mx-auto object-cover">
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-gray-600 leading-relaxed">
+                        Hello! I'm Carl Lazatin, a dancer. 
+                        I can showcase my talents in dancing and I'm able to create some basic steps.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">First Ever Performance</h3>
+                        <p class="text-gray-600 mb-4">This held September 2023 and were so excited because this is the first performance of our group, etc.
+.</p>
+                        <a href="#" class="text-blue-600 hover:underline">View Project</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Family Day!</h3>
+                        <p class="text-gray-600 mb-4">We were colorful clothes and after we perform, a lot of staff, teachers feed us with their plenty foods..</p>
+                        <a href="#" class="text-blue-600 hover:underline">View Project</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Usher</h3>
+                        <p class="text-gray-600 mb-4">This day, I was assignd to help group of performers to assist them being part of my immersion in school.</p>
+                        <a href="#" class="text-blue-600 hover:underline">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Contact Me</h2>
+            <div class="max-w-lg mx-auto">
+                <div class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-gray-600">Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-600">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Your Email">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-600">Message</label>
+                        <textarea id="message" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <button onclick="submitContact()" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <p>&copy; 2025. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white"></a>
+                <a href="#" class="text-gray-400 hover:text-white"></a>
+                <a href="#" class="text-gray-400 hover:text-white"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+
+        // Smooth scrolling for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Contact form submission (placeholder)
+        function submitContact() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            alert(`Message sent!\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+            // Reset form
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+        }
+    </script>
+</body>
+</html>
